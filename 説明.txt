@@ -1,0 +1,142 @@
+
+
+※基本的に、SamacSys_PCB_Libraryは一時的に利用し、都度、KiCad_mylibに整理する。
+
+
+① ECADデータから"Open ECAD Model"すると
+　・フォルダ「Downloads」に	step(stp), wrl, 他
+　・フォルダ「Libraries」に	lib, dcm, kicad_mod, (step(stp), wrl)
+が抽出される。
+
+
+② 下記のようにそれぞれ手動で振り分ける。
+
+「Libraries」から
+「Downloads」から				※こちらの場合も
+*.lib :		>>> KiCad-mylib/my_symbols/{ジャンル}.lib　を開いてlibの中身をコピペ
+*.dcm :		>>> KiCad-mylib/my_symbols/{ジャンル}.dcm　を開いてdcmの中身をコピペ
+※　ファイル構成は下記参照
+
+「Libraries/SamacSys_Parts.pretty」から
+*.kicad_mod 	>>> KiCad-mylib/my_footprints/ {ジャンル}.pretty　に入れる
+
+
+「Libraries/SamacSys_Parts.3dshapes」から　	※おそらくあまり入ってない
+「Downloads」から				※おそらくこちらが多い
+*.stp : 	>>> KiCad-mylib/my_packages3d/ {ジャンル}.3dshapes　に入れる
+*.wrl:		>>> KiCad-mylib/my_packages3d/ {ジャンル}.3dshapes　に入れる
+
+フォルダ構成
+my_symbols　	--- {ジャンル}.lib
+		--- {ジャンル}.dcm
+my_footprints	--- {ジャンル}.pretty 	--- kicad_mod 
+my_packages3d 	--- {ジャンル}.3dshapes	--- step, wrl
+
+
+my_symbols{ジャンル}一覧
+my_packages3d{ジャンル}一覧
+MyParts_MCU
+MyParts_Battery
+MyParts_Sensor
+MyParts_MOSFET
+MyParts_Regulator_Linear
+
+my_footprints{ジャンル}一覧
+MyParts_MCU.pretty
+MyParts_Battery.pretty
+MyParts_Package_DFN_SMD.pretty
+MyParts_Package_DSBGA_SMD.pretty
+MyParts_Package_SOT_SMD.pretty
+
+
+③ データを移し終わったらフォルダの中を削除する。
+
+④ ライブラリのパス設定する。
+シンボルライブラリーの管理
+フットプリントライブラリーの管理
+
+⑤ 関連付けを確認・設定
+シンボルエディターでフットプリントの関連付けを確認・設定
+フットプリントエディターでフットプリント3Dデータの関連付けを確認・設定
+https://spiceman.jp/kicad-symbol-footprint/
+
+※エラー配置されたフットプリントのいくるかは、（ライブラリのニックネームのない）古い形式
+https://make.kosakalab.com/eda/kicad5_fp-lib-table/
+
+⑥ git更新
+git add -A
+git commit -m "説明"
+git push origin master
+
+
+ライブラリをKicadに設定
+今後やること
+　sym-lib-table
+　sym-fp-table
+　を使うとおそらく一つの設定で全ライブラリ登録できるはず（←scriptで作成？）
+https://make.kosakalab.com/eda/kicad5_fp-lib-table/
+
+拡張子
+
+*.pro :		プロジェクトファイル。
+*.sch :		回路図ファイル。
+
+*.lib :		コンポーネントライブラリファイル。一つのファイルに複数のコンポーネントの情報が記述されている。
+*.dcm :		コンポーネントライブラリの説明ドキュメント。
+
+*.kicad_pcb :	PCBレイアウトファイル。
+*.pretty :	新しい KiCad のフットプリントライブラリライブラリフォルダ。フォルダ自体がライブラリとして扱われる。
+*.kicad_mod :	新しい KiCad のフットプリントファイル。*.pretty以下に格納される。各ファイルは1つのフットプリントの情報を含む。
+*.mod :		古い KiCad のフットプリントライブラリ
+*.net :		Eeschemaが作成するネットリストファイル。
+*.cmp : 	Pcbnewで作られる、コンポーネントとフットプリントの対応を記録したファイル。
+
+*.epw : 	基板CADライブラリ作成ツール「EPW」のファイル？
+*.stl : 	3Dデータ: STLファイル
+*.stp : 	3Dデータ: STEPファイル
+*.wrl : 	3Dデータ: VRML形式(*.wrl)
+
+
+
+～.libファイル構成
+接続図で使用するシンボルの情報です。
+
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 名前		********** ｺｺｶﾗ **********
+#
+DEF Jumper_2_Bridged JP 0 0 Y N 1 F N
+F0 "JP" 0 75 50 H V C CNN
+F1 "Jumper_2_Bridged" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jumper*
+$ENDFPLIST
+DRAW
+A 0 -70 100 1269 531 0 1 0 N -60 10 60 10
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF		********** ｺｺﾏﾃﾞ**********
+#
+#End Library
+
+
+
+～.dcmファイル構成
+パーツの補足情報やデータシートのリンク先等が記載されているようです。
+
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 名前	********** ｺｺｶﾗ **********
+D 説明
+K
+F 
+$ENDCMP		********** ｺｺﾏﾃﾞ**********
+#
+#End Doc Library
+	

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSS138LT7G
+D MOSFET Single N-Channel Logic Level Power MOSFET 50V, 200mA, 3.5
+K
+F
+$ENDCMP
+#
+#End Doc Library
