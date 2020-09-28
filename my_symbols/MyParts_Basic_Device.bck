@@ -1,0 +1,45 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+K C cap capacitor
+F ~
+$ENDCMP
+#
+$CMP C_Small
+D Unpolarized capacitor, small symbol
+K C cap capacitor
+F ~
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP MountingHole
+D Mounting Hole without connection
+K mounting hole
+F ~
+$ENDCMP
+#
+$CMP MountingHole_Pad
+D Mounting Hole with connection
+K mounting hole
+F ~
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_Small
+D Resistor, small symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+#End Doc Library

@@ -1,9 +1,9 @@
-(module SOT95P237X112-3N (layer F.Cu) (tedit 5F6F7622)
+(module SOT95P237X112-3N (layer F.Cu) (tedit 5F718EA0)
   (descr "(TT)(SOT-23)")
   (tags "Power Supply")
   (attr smd)
-  (fp_text reference PS** (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  (fp_text reference REF** (at 0 -2.54) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value SOT95P237X112-3N (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
