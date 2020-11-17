@@ -1,6 +1,6 @@
 
 
-
+※基本的に、SamacSys_PCB_Libraryは一時的に利用し、都度、KiCad_mylibに整理する。
 
 
 ① ECADデータから"Open ECAD Model"すると
@@ -33,38 +33,23 @@ my_footprints	--- {ジャンル}.pretty 	--- kicad_mod
 my_packages3d 	--- {ジャンル}.3dshapes	--- step, wrl
 
 
-my_symbols{ジャンル}一覧
-my_packages3d{ジャンル}一覧
-MyParts_Basic_Device
-MyParts_MCU
-MyParts_Battery
-MyParts_Sensor
-MyParts_MOSFET
-MyParts_Regulator_Linear
-
-my_footprints{ジャンル}一覧
-MyParts_Basic_Device
-MyParts_Battery.pretty
-MyParts_MCU.pretty
-MyParts_Package_DFN_SMD.pretty
-MyParts_Package_DSBGA_SMD.pretty
-MyParts_Package_SOT_SMD.pretty
 
 
-③ データを移し終わったらSamacSys_PCB_Libraryフォルダの中を削除する。
-※基本的に、SamacSys_PCB_Libraryは一時的に利用し、都度、KiCad_mylibに整理する。
+③ データを移し終わったらフォルダの中を削除する。
 
 ④ ライブラリのパス設定する。
 シンボルライブラリーの管理
 フットプリントライブラリーの管理
 
 ⑤ 関連付けを確認・設定
-・シンボルエディター
-　・フットプリントの関連付けを確認・設定
-　・リファレンス（U,IC等⇒REF**でいいと思う）を確認
-・フットプリントエディター
-　・フットプリント3Dデータの関連付けを確認・設定
-　・シルクのサイズ（1, 1, 0.15⇒統一）、位置等を確認
+・シンボルエディターでフットプリントの関連付けを確認・設定
+・リファレンス（U,IC等）を確認
+・フットプリントエディターでフットプリント3Dデータの関連付けを確認・設定
+・シルクのサイズ（⇒統一？けん）、位置等を確認
+https://spiceman.jp/kicad-symbol-footprint/
+
+※エラー配置されたフットプリントのいくるかは、（ライブラリのニックネームのない）古い形式
+https://make.kosakalab.com/eda/kicad5_fp-lib-table/
 
 ⑥ git更新
 git add -A
@@ -72,12 +57,12 @@ git commit -m "説明"
 git push origin master
 
 
-
 ライブラリをKicadに設定
 今後やること
-
-
-
+　sym-lib-table
+　sym-fp-table
+　を使うとおそらく一つの設定で全ライブラリ登録できるはず（←scriptで作成？）
+https://make.kosakalab.com/eda/kicad5_fp-lib-table/
 
 拡張子
 

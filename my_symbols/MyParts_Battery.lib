@@ -1,8 +1,8 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-#SamacSys ECAD Model BAT-HLD-001
-#/577251/13594/2.47/3/4/Undefined or Miscellaneous
+# BAT-HLD-001
+#
 DEF BAT-HLD-001 U 0 30 Y Y 1 F N
 F0 "U" 650 300 50 H V L CNN
 F1 "BAT-HLD-001" 650 200 50 H V L CNN
@@ -15,10 +15,9 @@ F7 "https://www.mouser.co.uk/ProductDetail/Linx-Technologies/BAT-HLD-001?qs=K5ta
 F8 "Linx Technologies" 650 -500 50 H I L CNN "Manufacturer_Name"
 F9 "BAT-HLD-001" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
-X 1 1 0 -200 200 R 50 50 0 0 P
-X 2 2 0 0 200 R 50 50 0 0 P
-X 3 3 0 -100 200 R 50 50 0 0 P
-P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+S 600 -250 200 100 0 1 0 N
+X PLUS 1 0 0 200 R 50 50 0 0 w
+X MINUS 2 0 -150 200 R 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

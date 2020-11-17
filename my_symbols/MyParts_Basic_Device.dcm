@@ -12,6 +12,12 @@ K C cap capacitor
 F ~
 $ENDCMP
 #
+$CMP Jumper_2_Open
+D Jumper, 2-pole, open
+K Jumper SPST
+F ~
+$ENDCMP
+#
 $CMP LED
 D Light emitting diode
 K LED diode

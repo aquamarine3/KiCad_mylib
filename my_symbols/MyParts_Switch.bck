@@ -1,0 +1,24 @@
+EESchema-DOCLIB  Version 2.0
+#
+#
+$CMP SW_Push
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+#
+$CMP PTS636_SK43_SMTR_LFS
+D Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 4.3mm H, 250gf, G leads, No ground pin, Black Actuator
+F https://componentsearchengine.com/Datasheets/1/PTS636 SK43 SMTR LFS.pdf
+$ENDCMP
+#
+#
+$CMP B3U-1000P
+D OMRON ELECTRONIC COMPONENTS - B3U-1000P - SWITCH, SPST-NO, 0.05A, 12V, SMD
+K
+F https://www.omron.com/ecb/products/pdf/en-b3u.pdf
+$ENDCMP
+#
+#
+#End Doc Library

@@ -1,19 +1,19 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# BSS138LT7G
+# BSS138LT1G
 #
-DEF BSS138LT7G Q 0 30 Y Y 1 F N
+DEF BSS138LT1G Q 0 30 Y Y 1 F N
 F0 "Q" 450 150 50 H V L CNN
-F1 "BSS138LT7G" 450 50 50 H V L CNN
+F1 "BSS138LT1G" 450 50 50 H V L CNN
 F2 "0_MyParts_Package_SOT_SMD:SOT96P237X111-3N" 450 -50 50 H I L CNN
 F3 "" 450 -150 50 H I L CNN
-F4 "MOSFET Single N-Channel Logic Level Power MOSFET 50V, 200mA, 3.5" 450 -250 50 H I L CNN "Description"
+F4 "MOSFET N-Channel 50V 0.2A SOT23 ON Semiconductor BSS138LT1G N-channel MOSFET Transistor, 0.2 A, 50 V, 3-Pin SOT-23" 450 -250 50 H I L CNN "Description"
 F5 "1.11" 450 -350 50 H I L CNN "Height"
-F6 "863-BSS138LT7G" 450 -450 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/BSS138LT7G?qs=l7cgNqFNU1gVGpXKtqpwiw%3D%3D" 450 -550 50 H I L CNN "Mouser Price/Stock"
+F6 "863-BSS138LT1G" 450 -450 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/BSS138LT1G?qs=vNc2DXHODiKPZ2y3rQhTYQ%3D%3D" 450 -550 50 H I L CNN "Mouser Price/Stock"
 F8 "ON Semiconductor" 450 -650 50 H I L CNN "Manufacturer_Name"
-F9 "BSS138LT7G" 450 -750 50 H I L CNN "Manufacturer_Part_Number"
+F9 "BSS138LT1G" 450 -750 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
 C 250 100 150 0 1 10 N
 P 2 0 1 6 230 -20 230 20 N

@@ -5,6 +5,18 @@ D &plusmn;2% ultra-low-power, digital humidity sensor with temperature sensor in
 F http://www.ti.com/lit/gpn/hdc2010
 $ENDCMP
 #
+$CMP HDC2080DMBR
+D Board Mount Humidity Sensors Low Power Humidity and Temperature Digital Sensor 6-WSON -40 to 85
+K Humidity, Temperature
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fds%2Fsymlink%2Fhdc2080.pdf
+$ENDCMP
+#
+$CMP HTS221TR
+D Humidity and Temperature Sensor HLGA6 STMicroelectronics HTS221TR Temperature & Humidity Sensor, -40  +120 C, 6-Pin HLGA
+K HLGA-6L
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/4d/9a/9c/ad/25/07/42/34/DM00116291.pdf/files/DM00116291.pdf/jcr:content/translations/en.DM00116291.pdf
+$ENDCMP
+#
 $CMP SGP30-2.5k
 D Air Quality Sensors Multi-Pixel SGP Gas Sensor
 K CO2

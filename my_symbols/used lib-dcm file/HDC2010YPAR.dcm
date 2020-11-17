@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP HDC2010YPAR
-D &plusmn;2% ultra-low-power, digital humidity sensor with temperature sensor in WCSP
-K
-F http://www.ti.com/lit/gpn/hdc2010
-$ENDCMP
-#
-#End Doc Library

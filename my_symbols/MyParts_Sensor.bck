@@ -1,15 +1,16 @@
 EESchema-DOCLIB  Version 2.0
 #
+#
 $CMP HDC2010YPAR
 D &plusmn;2% ultra-low-power, digital humidity sensor with temperature sensor in WCSP
-K
 F http://www.ti.com/lit/gpn/hdc2010
 $ENDCMP
 #
+#
 $CMP SGP30-2.5k
 D Air Quality Sensors Multi-Pixel SGP Gas Sensor
-K
-F
+K CO2
 $ENDCMP
+#
 #
 #End Doc Library

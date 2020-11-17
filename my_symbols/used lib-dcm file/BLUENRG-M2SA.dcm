@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP BLUENRG-M2SA
-D STMicroelectronics
-K
-F https://www.st.com/resource/en/datasheet/bluenrg-m2.pdf
-$ENDCMP
-#
-#End Doc Library

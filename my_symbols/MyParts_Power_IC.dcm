@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NCP171AMX180175TCG
+D 1.8V LDO
+K XDFN-4, XDFN4, XDFN
+$ENDCMP
+#
+#End Doc Library

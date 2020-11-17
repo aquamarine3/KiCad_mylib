@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCA9803DGKR
+D Level-Translating I2C Bus Buffer/Repeater
+K VSSOP-8
+F http://www.ti.com/lit/gpn/tca9803
+$ENDCMP
+#
+#End Doc Library
